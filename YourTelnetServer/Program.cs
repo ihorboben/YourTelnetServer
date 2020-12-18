@@ -5,13 +5,13 @@ namespace YourTelnetServer
 {
     class Program
     {
-         private static Server server;
+        private static Server server;
         static void Main(string[] args)
         {
             if (args.Length == 0)
             {
                 Console.WriteLine("specify port number");
-                return ;
+                return;
             }
 
             if (int.TryParse(args[0], out int port))
